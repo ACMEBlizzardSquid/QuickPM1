@@ -3,9 +3,12 @@ package soen487.xml.service;
 import java.io.File;
 import java.io.IOException;
 
+
 import javax.jws.WebMethod;
 import javax.jws.WebService;
+import javax.jws.WebParam;
 import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.namespace.QName;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -20,13 +23,13 @@ public class EchoXMLReader {
 	public static enum XMLType { RSS, NN, MARFCAT_IN, MARFCAT_OUT, WSDL }
 
 	@WebMethod
-	public String read(File xmlfile, XMLType type) 
+	public String readFromFile(@WebParam(name="file") File xmlfile, @WebParam(name="type") XMLType type) 
 			throws ParserConfigurationException, SAXException, IOException{
 		return prettyPrint(XMLReader.readAsDOM(xmlfile));
 	}
 	
 	@WebMethod
-	public String read(String url, XMLType type) 
+	public String readFromUrl(@WebParam(name="url") String url, @WebParam(name="type") XMLType type) 
 			throws ParserConfigurationException, SAXException, IOException{
 		return prettyPrint(XMLReader.readAsDOM(url));
 	}
