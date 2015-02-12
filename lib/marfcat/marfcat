@@ -1,0 +1,506 @@
+#!/bin/tcsh -f
+
+#
+# Batch Processing of Training/Testing Samples
+# NOTE: May take quite some time to execute
+#
+# Copyright (C) 2010 - 2012 The MARF Research and Development Group
+#
+# $Id: marfcat,v 1.19 2012/07/20 03:06:34 mokhov Exp $
+#
+
+#
+# Set environment variables, if/as needed
+#
+
+setenv CLASSPATH ../../..:marf.jar
+setenv EXTDIRS
+
+echo "0: $0"
+echo "1: $1"
+echo "2: $2"
+echo "3: $3"
+echo "4: $4"
+echo "5: $5"
+echo "6: $6"
+echo "7: $7"
+echo "8: $8"
+echo "9: $9"
+
+
+#
+# Set flags to use in the batch execution
+#
+
+#set java = 'java -ea -verify -Xmx512m'
+#set java = 'java -Xmx512m'
+#set java = 'java -Xmx2g -XX:-UseGCOverheadLimit'
+#set java = 'java -Xmx1g -XX:-UseGCOverheadLimit'
+#set java = 'java -Xmx512m -XX:-UseGCOverheadLimit'
+set java = './javalimited.sh -Xmx512m -XX:-UseGCOverheadLimit'
+
+$java -d64 |& grep 'not supported'
+
+if($? != 0) then
+#	set java = 'java -Xmx2g -XX:-UseGCOverheadLimit -d64'
+endif
+
+#set MARFCATApp = 'marf.apps.MARFCAT.MARFCATApp';
+set MARFCATApp = '-jar marfcat.jar';
+
+set xmlvalidate = 'xmllint --schema sate4.pathcheck.xsd'
+set evalt1 = ''
+set evalt2 = ''
+
+#set debug = '--debug'
+set debug = ''
+set graph = ''
+#set graph = '-graph'
+set spectrogram = ''
+#set spectrogram = '-spectrogram'
+set outformat = ''
+set outformat = '-flucid'
+set displayOrIdent = '--ident'
+#set displayOrIdent = '--display-training-set'
+set dynaclass = ''
+set dynaclass = '-dynaclass'
+
+set resultsPrefix = "$3"
+set stats2latex = "./stats2latex.pl $resultsPrefix"
+
+#set optionsNLP = "-char -interactive"
+#set optionsNLP = "-char"
+
+set train='--train'
+set ident='--batch-ident'
+
+# --full
+set preprepListFull    = (-nopreprep -silence -noise -silence-noise)
+set prepListFull       = (-norm -boost -low -high -band -bandstop -highpassboost -raw -endp -lowcfe -highcfe -bandcfe -bandstopcfe)
+set featListFull       = (-fft -lpc -randfe -minmax -aggr)
+set classListTrainFull = (-cheb -mah  -zipf -randcl -nn)
+set classListTestFull  = (-eucl -cheb -mink -mah -diff -hamming -cos -zipf -randcl -nn)
+
+# --fast
+set prepListFast       = (-norm -boost -low -high -band -bandstop -highpassboost -raw -endp)
+set featListFast       = (-fft -lpc -minmax -aggr)
+set classListTrainFast = (-cheb)
+set classListTestFast  = (-eucl -cheb -mink -diff -hamming -cos)
+
+# --zipf-fast
+set prepListZipfFast       = (-norm -boost -low -high -band -bandstop -highpassboost -raw -endp)
+set featListZipfFast       = (-fft -lpc -minmax -aggr)
+set classListTrainZipfFast = (-cheb -zipf)
+set classListTestZipfFast  = (-zipf)
+
+# --super-fast
+set prepListSuperFast       = (-raw)
+#set prepListSuperFast       = (-low)
+#set prepListSuperFast       = (-sdwt)
+set featListSuperFast       = (-fft)
+#set featListSuperFast       = (-fft -lpc)
+set classListSuperTrainFast = (-cheb)
+set classListSuperTestFast  = (-cheb)
+#set classListSuperTrainFast = (-cos)
+#set classListSuperTestFast  = (-cos)
+
+# X: --pure-slow
+#set prepListSlow       = (-lowcfe -highcfe -bandcfe -bandstopcfe)
+#set featListSlow       = (-randfe)
+#set classListTrainSlow = (-mah -randcl -nn)
+#set classListTestSlow  = (-mah -randcl -nn)
+
+# --slow1
+set prepListSlow1       = (-norm -boost -low -high -band -bandstop -highpassboost -raw -endp -lowcfe -highcfe -bandcfe -bandstopcfe)
+set featListSlow1       = (-fft -lpc -randfe -minmax -aggr)
+set classListTrainSlow1 = (-mah -randcl -nn)
+set classListTestSlow1  = (-mah -randcl -nn)
+
+# --slow2
+set prepListSlow2       = (-norm -boost -low -high -band -bandstop -highpassboost -raw -endp -lowcfe -highcfe -bandcfe -bandstopcfe)
+set featListSlow2       = (-randfe)
+set classListTrainSlow2 = (-cheb)
+set classListTestSlow2  = (-eucl -cheb -mink -diff -hamming -cos)
+
+# --slow3
+set prepListSlow3       = (-lowcfe -highcfe -bandcfe -bandstopcfe)
+set featListSlow3       = (-fft -lpc -minmax -aggr)
+set classListTrainSlow3 = (-cheb)
+set classListTestSlow3  = (-eucl -cheb -mink -diff -hamming -cos)
+
+# -ref (example, reset below)
+set configList =( a b )
+set configList[1]="-norm:-fft:-cos"
+set configList[2]="-low:-fft:-cos"
+
+
+echo "Here-1"
+
+set preprepList = ( $preprepListFull )
+
+if("$2" == '--fast') then
+	set prepList       = ( $prepListFast )
+	set featList       = ( $featListFast )
+	set classListTrain = ( $classListTrainFast )
+	set classListTest  = ( $classListTestFast )
+endif
+
+if("$2" == '--zipf-fast') then
+	set prepList       = ( $prepListZipfFast )
+	set featList       = ( $featListZipfFast )
+	set classListTrain = ( $classListTrainZipfFast )
+	set classListTest  = ( $classListTestFast )
+endif
+
+if("$2" == '--super-fast') then
+echo "Here-1.1"
+	set preprepList    = (-nopreprep)
+	set prepList       = ( $prepListSuperFast )
+	set featList       = ( $featListSuperFast )
+	set classListTrain = ( $classListSuperTrainFast )
+	set classListTest  = ( $classListSuperTestFast )
+echo "Here-1.2"
+endif
+
+if("$2" == '--slow1') then
+	set prepList       = ( $prepListSlow1 )
+	set featList       = ( $featListSlow1 )
+	set classListTrain = ( $classListTrainSlow1 )
+	set classListTest  = ( $classListTestSlow1 )
+endif
+
+if("$2" == '--slow2') then
+	set prepList       = ( $prepListSlow2 )
+	set featList       = ( $featListSlow2 )
+	set classListTrain = ( $classListTrainSlow2 )
+	set classListTest  = ( $classListTestSlow2 )
+endif
+
+if("$2" == '--slow3') then
+	set prepList       = ( $prepListSlow3 )
+	set featList       = ( $featListSlow3 )
+	set classListTrain = ( $classListTrainSlow3 )
+	set classListTest  = ( $classListTestSlow3 )
+endif
+
+if("$2" == '--full') then
+echo "Here-1.9"
+	set prepList       = ( $prepListFull )
+	set featList       = ( $featListFull )
+	set classListTrain = ( $classListTrainFull )
+	set classListTest  = ( $classListTestFull )
+echo "Here-1.10"
+endif
+
+if("$2" == '--nlp') then
+	set preprepList    = ( -nopreprep )
+	set prepList       = ( -char )
+#	set featList       = ( -unigram -bigram -trigram )
+#	set featList       = ( -unigram -bigram )
+	set featList       = ( -unigram )
+#	set featList       = ( -bigram )
+#	set classListTrain = ( -add-delta -mle -add-one -witten-bell -good-turing )
+#	set classListTest  = ( -add-delta -mle -add-one -witten-bell -good-turing )
+#	set classListTrain = ( -add-delta -mle -add-one )
+	set classListTrain = ( -add-delta )
+#	set classListTest  = ( -add-delta -mle -add-one )
+	set classListTest  = ( -add-delta )
+
+	set train='--train-nlp'
+	set ident='--ident-nlp'
+endif
+
+echo "Here0"
+
+set sateOptions = "$7 $8"
+
+echo "Here1"
+
+# Training data, piste 1's training data, test data, reference data
+set sateTrainDataSourceFile = 'wireshark-1.2.0_train.xml'
+set sateTestDataSourceFile = 'wireshark-1.2.0_test.xml'
+set sateTestDataSourceDir = 'training-data'
+
+if( "$4" != "" ) then
+echo "Here1.1"
+	set sateTrainDataSourceFile = $4
+endif
+
+if( "$5" != "" ) then
+echo "Here1.2"
+	set sateTestDataSourceFile = $5
+endif
+
+if( "$6" != "" ) then
+echo "Here1.3"
+	set sateTestDataSourceDir = $6
+endif
+
+
+echo "Here2"
+
+if("$1" == '--reset') then
+	echo "Resetting Stats..."
+	$java $MARFCATApp --reset $sateTestDataSourceFile $sateOptions
+	exit 0
+endif
+
+echo "Here3"
+if("$1" == '--retrain' || "$1" == '--retrain-train-test' || "$1" == '--retrain-test-test' ) then
+	echo "Training..."
+
+	# Always reset stats before retraining the whole thing
+	$java $MARFCATApp --reset $sateTestDataSourceFile $sateOptions
+
+#foreach loader (-wav -text -rawbyte)
+foreach loader (-rawbyte)
+#foreach loader (-wav)
+	echo "Training... 3.lo"
+	foreach preprep ( $preprepList )
+	echo "Training... 3.pp"
+		foreach prep ( $prepList )
+	echo "Training... 3.pr"
+			foreach feat ( $featList )
+	echo "Training... 3.fe"
+
+				# Here we specify which classification modules to use for
+				# training.
+				#
+				# NOTE: for most distance classifiers it's not important
+				# which exactly it is, because the one of the generic Distance is used.
+				# Exception from this rule is the Mahalanobis Distance, which needs
+				# to learn its Covariance Matrix.
+
+				foreach class ( $classListTrain )
+					echo "Config: $preprep $prep $feat $class $spectrogram $graph $outformat $debug"
+					date
+
+					# XXX: We cannot cope gracefully right now with these combinations in the
+					# typical PC/JVM set up --- too many links in the fully-connected NNet,
+					# so can run out of memory quite often; hence, skip them for now.
+					if("$class" == "-nn" && ("$feat" == "-fft" || "$feat" == "-randfe" || "$feat" == "-aggr")) then
+						echo "skipping..."
+						continue
+					endif
+
+					time $java $MARFCATApp $train \
+						$sateTrainDataSourceFile $sateOptions \
+						$preprep $prep $feat $class \
+						$spectrogram $graph $outformat $debug
+
+echo "Here3.1"
+					# Allow spawning tests right after training on the given configuration
+					if("$1" != '--retrain') then
+echo "Here3.2"
+
+						if("$class" == "-cheb") then
+							set classifiers="-eucl -cheb -mink -diff -hamming -cos"
+							set startSleep="sleep 3" 
+						else
+							set classifiers="$class"
+#							set startSleep="" 
+							set startSleep="sleep 3" 
+						endif
+						
+						if("$1" == '--retrain-train-test') then
+							set strTestAfterOption='--test-train-after-train'
+						else
+							set strTestAfterOption='--test-test-after-train'
+						endif
+
+						$startSleep
+						
+echo "Here3.3: [$classifiers][$strTestAfterOption]"
+
+						foreach classifierItem ( $classifiers )
+							set strSingleLogFile=`echo -n "$0 $sateOptions $preprep $prep $feat $classifierItem $spectrogram $graph $outformat $debug .log" | sed 's/ //g'`
+echo "Here3.4: [$strSingleLogFile]"
+
+							$0 \
+								$strTestAfterOption \
+								$2 \
+								"$preprep $prep $feat $classifierItem $spectrogram $graph $outformat $debug" \
+								$4 $5 $6 \
+								$sateOptions \
+								>&! "$strSingleLogFile" \
+								&
+
+							$startSleep
+						end
+					endif
+					
+				end
+
+			end
+		end
+	end
+
+endif
+
+echo "Here4"
+
+if("$1" == "--display-training-set") then
+	echo "Displaying..."
+
+#foreach loader (-wav -text -rawbyte)
+foreach loader (-rawbyte)
+#foreach loader (-wav)
+	foreach preprep ( $preprepList )
+		foreach prep ( $prepList )
+			foreach feat ( $featList )
+				foreach class ( $classListTest )
+				foreach trainingSetFile ( *.gzbin )
+					echo "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-="
+					echo "Display Config: $preprep $prep $feat $class $spectrogram $graph $outformat $debug"
+					echo "File: $trainingSetFile"
+					date
+					echo "============================================="
+
+					$java $MARFCATApp --show-training-set $trainingSetFile $sateOptions $preprep $prep $feat $class $spectrogram $graph $outformat $debug
+
+					echo "---------------------------------------------"
+				end
+				end
+			end
+		end
+	end
+end
+
+	exit 0;
+endif
+
+
+echo "Here4.1"
+
+if("$1" == "--test-train-after-train") then
+	echo "Testing on training data supposedly right after training..."
+echo "Here4.2"
+
+	echo "${0} ${1}: Acquiring Testing Lock..."
+echo "Here4.3"
+
+	while ( -e $0.lock )
+		echo "${0} ${1}: Waiting for Testing Lock..."
+		sleep 5
+	end
+
+	touch $0.lock
+	echo "${0} ${1}: Got Testing Lock..."
+
+		echo "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-="
+		echo "Config: ${3}"
+		date
+		echo "============================================="
+
+		time $java $MARFCATApp $ident \
+			$sateTestDataSourceDir $sateTestDataSourceFile $sateOptions \
+			$3
+		echo "---------------------------------------------"
+
+	rm -f $0.lock
+	echo "${0} ${1}: Released Testing Lock..."
+
+endif
+
+
+echo "Here5"
+if("$1" == "--train-test") then
+
+	echo "Testing..."
+
+cat <<XMLHEAD
+<?xml version="1.0" encoding="utf-8" ?>
+<corpus>
+XMLHEAD
+
+#foreach loader (-wav -text -rawbyte)
+foreach loader (-rawbyte)
+#foreach loader (-wav)
+	foreach preprep ( $preprepList )
+		foreach prep ( $prepList )
+			foreach feat ( $featList )
+				foreach class ( $classListTest )
+
+echo "Acquiring Testing Lock..."
+
+while ( -e $0.lock )
+	echo "Waiting for Testing Lock..."
+	sleep 1
+end
+
+touch $0.lock
+echo "Got Testing Lock..."
+
+				echo "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-="
+				echo "Config: $preprep $prep $feat $class $spectrogram $graph $outformat $debug"
+				date
+				echo "============================================="
+
+				# XXX: We cannot cope gracefully right now with these combinations in the
+				# typical PC/JVM set up --- too many links in the fully-connected NNet,
+				# so can run out of memory quite often; hence, skip them for now.
+				if("$class" == "-nn" && ("$feat" == "-fft" || "$feat" == "-randfe" || "$feat" == "-aggr")) then
+					echo "skipping..."
+					continue
+				endif
+
+				time $java $MARFCATApp $ident \
+					$sateTestDataSourceDir $sateTestDataSourceFile $sateOptions \
+					$preprep $prep $feat $class \
+					$spectrogram $graph $outformat $debug
+				echo "---------------------------------------------"
+
+rm -f $0.lock
+echo "Released Testing Lock..."
+
+			end
+		end
+	end
+end
+end
+
+	$0 --stats $2 $3 $4 $5 $6 $7 $8
+
+cat <<XMLFOOT
+</corpus>
+XMLFOOT
+endif
+
+
+echo "Here6"
+
+
+echo "Here8"
+
+#echo "Testing Done"
+
+echo "Here9"
+if("$1" == "--stats") then
+	echo "Displaying..."
+
+	echo "Acquiring Stats Printing Lock..."
+
+	while ( -e $0.lock )
+		echo "Waiting for Stats Printing Lock..."
+		sleep 1
+	end
+
+	touch $0.lock
+	echo "Got Stats Printing Lock..."
+
+	echo "Stats:"
+
+	$java $MARFCATApp --stats $sateTestDataSourceFile $sateOptions | tee stats$2.txt
+	$stats2latex < stats$2.txt >! $resultsPrefix-stats$2.tex 
+	$java $MARFCATApp --best-score $sateTestDataSourceFile $sateOptions | tee $resultsPrefix-best-score$2.tex
+	date | tee stats-date$2.tex
+
+	rm -f $0.lock
+	echo "Released Stats Printing Lock..."
+endif
+
+
+echo "Here11"
+exit 0
+
+# EOF

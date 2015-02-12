@@ -1,0 +1,4385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset generated-by="./collect-files-meta.pl" generated-on="2014-06-24T18:21:56">
+	<description>
+		<file-type-tool>
+file-4.17
+magic file from /encs/pkg/file-4.17/root/share/file/magic
+
+		</file-type-tool>
+		<find-tool>
+find (GNU findutils) 4.5.9
+Copyright (C) 2010 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later http://gnu.org/licenses/gpl.html.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by Eric B. Decker, James Youngman, and Kevin Dalley.
+Built using GNU gnulib version 1778ee9e7d0e150a37db66a0e51c1a56755aab4f
+Features enabled: D_TYPE O_NOFOLLOW(enabled) LEAF_OPTIMISATION FTS(FTS_CWDFD) CBO(level=2) 
+
+		</find-tool>
+		<marf-tool>
+MARF, the Modular Audio Recognition Framework
+---------------------------------------------
+Version: 0.3.0.6
+MARF is Copyright (C) 2002 - 2012 by the MARF Research and Development Group
+
+                     http://marf.sourceforge.net
+
+and is distributed under the terms of the BSD-style license below.
+
+Permission to use, copy, modify, and distribute this software and
+its documentation for any purpose, without fee, and without a
+written agreement is hereby granted, provided that the above
+copyright notice and this paragraph and the following two paragraphs
+appear in all copies.
+
+IN NO EVENT SHALL CONCORDIA UNIVERSITY OR THE AUTHORS BE LIABLE TO ANY
+PARTY FOR DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL
+DAMAGES, INCLUDING LOST PROFITS, ARISING OUT OF THE USE OF THIS
+SOFTWARE AND ITS DOCUMENTATION, EVEN IF CONCORDIA UNIVERSITY OR THE AUTHORS
+HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+CONCORDIA UNIVERSITY AND THE AUTHORS SPECIFICALLY DISCLAIM ANY WARRANTIES,
+INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  THE SOFTWARE
+PROVIDED HEREUNDER IS ON AN ``AS-IS'' BASIS, AND CONCORDIA UNIVERSITY AND THE
+AUTHORS HAVE NO OBLIGATIONS TO PROVIDE MAINTENANCE, SUPPORT,
+UPDATES, ENHANCEMENTS, OR MODIFICATIONS.
+
+MARF Classes' Revision Information:
+
+marf.MARF: $Revision: 1.120 $
+marf.Version: $Revision: 1.6 $
+marf.Preprocessing.Preprocessing: $Revision: 1.51 $
+marf.Preprocessing.PreprocessingException: $Revision: 1.11 $
+marf.Preprocessing.PreprocessingFactory: $Revision: 1.5 $
+marf.Preprocessing.FFTFilter.FFTFilter: $Revision: 1.38 $
+marf.Preprocessing.FFTFilter.BandpassFilter: $Revision: 1.26 $
+marf.Preprocessing.FFTFilter.HighFrequencyBoost: $Revision: 1.31 $
+marf.Preprocessing.FFTFilter.HighPassFilter: $Revision: 1.19 $
+marf.Preprocessing.FFTFilter.LowPassFilter: $Revision: 1.19 $
+marf.Preprocessing.Dummy.Dummy: $Revision: 1.27 $
+marf.Preprocessing.Dummy.Raw: $Revision: 1.15 $
+marf.Preprocessing.Endpoint.Endpoint: $Revision: 1.29 $
+marf.FeatureExtraction.FeatureExtraction: $Revision: 1.38 $
+marf.FeatureExtraction.FeatureExtractionException: $Revision: 1.9 $
+marf.FeatureExtraction.FeatureExtractionFactory: $Revision: 1.3 $
+marf.FeatureExtraction.FFT.FFT: $Revision: 1.56 $
+marf.FeatureExtraction.LPC.LPC: $Revision: 1.42 $
+marf.FeatureExtraction.MinMaxAmplitudes.MinMaxAmplitudes: $Revision: 1.15 $
+marf.FeatureExtraction.F0.F0: $Revision: 1.17 $
+marf.FeatureExtraction.Cepstral.Cepstral: $Revision: 1.14 $
+marf.FeatureExtraction.Segmentation.Segmentation: $Revision: 1.16 $
+marf.FeatureExtraction.RandomFeatureExtraction.RandomFeatureExtraction: $Revision: 1.18 $
+marf.FeatureExtraction.FeatureExtractionAggregator: $Revision: 1.10 $
+marf.Classification.Classification: $Revision: 1.54 $
+marf.Classification.ClassificationException: $Revision: 1.12 $
+marf.Classification.ClassificationFactory: $Revision: 1.6 $
+marf.Classification.NeuralNetwork.NeuralNetwork: $Revision: 1.64 $
+marf.Classification.NeuralNetwork.Neuron: $Revision: 1.20 $
+marf.Classification.NeuralNetwork.Layer: $Revision: 1.11 $
+marf.Classification.Distance.Distance: $Revision: 1.38 $
+marf.Classification.Distance.ChebyshevDistance: $Revision: 1.19 $
+marf.Classification.Distance.EuclideanDistance: $Revision: 1.21 $
+marf.Classification.Distance.MinkowskiDistance: $Revision: 1.13 $
+marf.Classification.Distance.MahalanobisDistance: $Revision: 1.23 $
+marf.Classification.Distance.DiffDistance: $Revision: 1.11 $
+marf.Classification.Stochastic.Stochastic: $Revision: 1.26 $
+marf.Classification.Stochastic.MaxProbabilityClassifier: $Revision: 1.31 $
+marf.Classification.Stochastic.ZipfLaw: $Revision: 1.35 $
+marf.Classification.Markov.Markov: $Revision: 1.24 $
+marf.Classification.RandomClassification.RandomClassification: $Revision: 1.22 $
+marf.Storage.Database: $Revision: 1.11 $
+marf.Storage.Sample: $Revision: 1.51 $
+marf.Storage.Cluster: $Revision: 1.20 $
+marf.Storage.Result: $Revision: 1.22 $
+marf.Storage.ResultSet: $Revision: 1.24 $
+marf.Storage.FeatureSet: $Revision: 1.20 $
+marf.Storage.MARFAudioFileFormat: $Revision: 1.14 $
+marf.Storage.SampleLoader: $Revision: 1.30 $
+marf.Storage.SampleLoaderFactory: $Revision: 1.3 $
+marf.Storage.StorageException: $Revision: 1.12 $
+marf.Storage.StorageManager: $Revision: 1.34 $
+marf.Storage.ModuleParams: $Revision: 1.20 $
+marf.Storage.TrainingSample: $Revision: 1.17 $
+marf.Storage.TrainingSet: $Revision: 1.52 $
+marf.Storage.Loaders.MP3Loader: $Revision: 1.15 $
+marf.Storage.Loaders.SineLoader: $Revision: 1.13 $
+marf.Storage.Loaders.ULAWLoader: $Revision: 1.16 $
+marf.Storage.Loaders.WAVLoader: $Revision: 1.34 $
+marf.Storage.Loaders.AIFFCLoader: $Revision: 1.5 $
+marf.Storage.Loaders.AIFFLoader: $Revision: 1.34 $
+marf.Storage.Loaders.AULoader: $Revision: 1.5 $
+marf.Storage.Loaders.MIDILoader: $Revision: 1.5 $
+marf.Storage.Loaders.SNDLoader: $Revision: 1.5 $
+marf.Stats.StatsCollector: $Revision: 1.8 $
+marf.Stats.Ngram: $Revision: 1.16 $
+marf.Stats.Observation: $Revision: 1.13 $
+marf.Stats.ProbabilityTable: $Revision: 1.42 $
+marf.Stats.StatisticalObject: $Revision: 1.17 $
+marf.Stats.WordStats: $Revision: 1.21 $
+marf.Stats.StatisticalEstimators.GLI: $Revision: 1.18 $
+marf.Stats.StatisticalEstimators.KatzBackoff: $Revision: 1.17 $
+marf.Stats.StatisticalEstimators.MLE: $Revision: 1.16 $
+marf.Stats.StatisticalEstimators.SLI: $Revision: 1.16 $
+marf.Stats.StatisticalEstimators.StatisticalEstimator: $Revision: 1.32 $
+marf.Stats.StatisticalEstimators.Smoothing.Smoothing: $Revision: 1.15 $
+marf.Stats.StatisticalEstimators.Smoothing.AddDelta: $Revision: 1.35 $
+marf.Stats.StatisticalEstimators.Smoothing.AddOne: $Revision: 1.12 $
+marf.Stats.StatisticalEstimators.Smoothing.GoodTuring: $Revision: 1.21 $
+marf.Stats.StatisticalEstimators.Smoothing.WittenBell: $Revision: 1.21 $
+marf.math.Vector: $Revision: 1.14 $
+marf.math.Matrix: $Revision: 1.47 $
+marf.math.MathException: $Revision: 1.6 $
+marf.math.Algorithms: $Revision: 1.19 $
+marf.util.BaseThread: $Revision: 1.18 $
+marf.util.ExpandedThreadGroup: $Revision: 1.17 $
+marf.util.FreeVector: $Revision: 1.16 $
+marf.util.Matrix: $Revision: 1.15 $
+marf.util.Debug: $Revision: 1.19 $
+marf.util.Logger: $Revision: 1.10 $
+marf.util.Arrays: $Revision: 1.43 $
+marf.util.ByteUtils: $Revision: 1.10 $
+marf.util.InvalidSampleFormatException: $Revision: 1.12 $
+marf.util.MARFException: $Revision: 1.21 $
+marf.util.NotImplementedException: $Revision: 1.15 $
+marf.util.OptionProcessor: $Revision: 1.40 $
+marf.util.SortComparator: $Revision: 1.11 $
+marf.util.comparators.RankComparator: $Revision: 1.14 $
+marf.util.comparators.FrequencyComparator: $Revision: 1.15 $
+marf.util.comparators.ResultComparator: $Revision: 1.16 $
+marf.nlp.NLPException: $Revision: 1.5 $
+marf.nlp.Parsing.Compiler: $Revision: 1.21 $
+marf.nlp.Parsing.CompilerError: $Revision: 1.23 $
+marf.nlp.Parsing.GenericLexicalAnalyzer: $Revision: 1.23 $
+marf.nlp.Parsing.LexicalAnalyzer: $Revision: 1.25 $
+marf.nlp.Parsing.LexicalError: $Revision: 1.24 $
+marf.nlp.Parsing.SymbolTable: $Revision: 1.24 $
+marf.nlp.Parsing.SymDataType: $Revision: 1.15 $
+marf.nlp.Parsing.SymTabEntry: $Revision: 1.18 $
+marf.nlp.Parsing.SyntaxError: $Revision: 1.25 $
+marf.nlp.Parsing.Token: $Revision: 1.26 $
+marf.nlp.Parsing.TokenSubType: $Revision: 1.21 $
+marf.nlp.Parsing.TokenType: $Revision: 1.21 $
+marf.nlp.Parsing.TransitionTable: $Revision: 1.15 $
+marf.nlp.Parsing.Parser: $Revision: 1.30 $
+marf.nlp.Parsing.ProbabilisticParser: $Revision: 1.31 $
+marf.nlp.Parsing.SemanticAnalyzer: $Revision: 1.7 $
+marf.nlp.Parsing.SemanticError: $Revision: 1.16 $
+marf.nlp.Parsing.CodeGenerator: $Revision: 1.8 $
+marf.nlp.Parsing.ClassSymTabEntry: $Revision: 1.8 $
+marf.nlp.Parsing.FuncSymTabEntry: $Revision: 1.12 $
+marf.nlp.Parsing.VarSymTabEntry: $Revision: 1.9 $
+marf.nlp.Parsing.GrammarCompiler.ProbabilisticGrammarCompiler: $Revision: 1.21 $
+marf.nlp.Parsing.GrammarCompiler.Grammar: $Revision: 1.23 $
+marf.nlp.Parsing.GrammarCompiler.GrammarAnalyzer: $Revision: 1.28 $
+marf.nlp.Parsing.GrammarCompiler.GrammarCompiler: $Revision: 1.31 $
+marf.nlp.Parsing.GrammarCompiler.GrammarElement: $Revision: 1.14 $
+marf.nlp.Parsing.GrammarCompiler.GrammarTokenType: $Revision: 1.13 $
+marf.nlp.Parsing.GrammarCompiler.NonTerminal: $Revision: 1.12 $
+marf.nlp.Parsing.GrammarCompiler.ProbabilisticGrammarAnalyzer: $Revision: 1.16 $
+marf.nlp.Parsing.GrammarCompiler.ProbabilisticGrammarTokenType: $Revision: 1.12 $
+marf.nlp.Parsing.GrammarCompiler.ProbabilisticRule: $Revision: 1.10 $
+marf.nlp.Parsing.GrammarCompiler.Rule: $Revision: 1.12 $
+marf.nlp.Parsing.GrammarCompiler.SemanticToken: $Revision: 1.10 $
+marf.nlp.Parsing.GrammarCompiler.Terminal: $Revision: 1.12 $
+marf.nlp.Collocations.CollocationWindow: $Revision: 1.6 $
+marf.nlp.Collocations.TTest: $Revision: 1.6 $
+marf.nlp.Collocations.ChiSquareTest: $Revision: 1.7 $
+marf.nlp.Stemming.Stemming: $Revision: 1.12 $
+marf.nlp.Stemming.StemmingEN: $Revision: 1.11 $
+marf.nlp.util.NLPStreamTokenizer: $Revision: 1.27 $
+marf.gui.Spectrogram: $Revision: 1.34 $
+marf.gui.SpectrogramPanel: $Revision: 1.7 $
+marf.gui.WaveGrapher: $Revision: 1.17 $
+marf.gui.WaveGrapherPanel: $Revision: 1.7 $
+marf.gui.GUIException: $Revision: 1.2 $
+marf.gui.util.BorderPanel: $Revision: 1.10 $
+marf.gui.util.SmartSizablePanel: $Revision: 1.12 $
+marf.gui.util.ColoredStatusPanel: $Revision: 1.11 $
+test: $Revision: 1.59 $
+
+MARF Interfaces' Revision Information:
+
+marf.Preprocessing.IPreprocessing: $Revision: 1.7 $
+marf.Preprocessing.IFilter: $Revision: 1.6 $
+marf.FeatureExtraction.IFeatureExtraction: $Revision: 1.5 $
+marf.Classification.IClassification: $Revision: 1.6 $
+marf.Storage.IStorageManager: $Revision: 1.12 $
+marf.Storage.ISampleLoader: $Revision: 1.14 $
+marf.Storage.IDatabase: $Revision: 1.8 $
+marf.Stats.StatisticalEstimators.IStatisticalEstimator: $Revision: 1.3 $
+marf.Stats.StatisticalEstimators.Smoothing.ISmoothing: $Revision: 1.3 $
+marf.nlp.Stemming.IStemming: $Revision: 1.2 $
+
+Runtime Environment:
+--------------------
+-- listing properties --
+java.runtime.name=Java(TM) SE Runtime Environment
+sun.boot.library.path=/nfs/encs/ArchDep/i686.linux26-RHEL5/...
+java.vm.version=20.45-b01
+java.vm.vendor=Sun Microsystems Inc.
+java.vendor.url=http://java.sun.com/
+path.separator=:
+java.vm.name=Java HotSpot(TM) Server VM
+file.encoding.pkg=sun.io
+user.country=US
+sun.java.launcher=SUN_STANDARD
+sun.os.patch.level=unknown
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=/nfs/nettemp/soen6611
+java.runtime.version=1.6.0_45-b06
+java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment
+java.endorsed.dirs=/nfs/encs/ArchDep/i686.linux26-RHEL5/...
+os.arch=i386
+java.io.tmpdir=/tmp
+line.separator=
+
+java.vm.specification.vendor=Sun Microsystems Inc.
+os.name=Linux
+sun.jnu.encoding=UTF-8
+java.library.path=/nfs/encs/ArchDep/i686.linux26-RHEL5/...
+java.specification.name=Java Platform API Specification
+java.class.version=50.0
+sun.management.compiler=HotSpot Tiered Compilers
+os.version=2.6.43.8-1.fc15.i686
+user.home=/home/m/mokhov
+user.timezone=
+java.awt.printerjob=sun.print.PSPrinterJob
+file.encoding=UTF-8
+java.specification.version=1.6
+user.name=mokhov
+java.class.path=marf.jar
+java.vm.specification.version=1.0
+sun.arch.data.model=32
+java.home=/nfs/encs/ArchDep/i686.linux26-RHEL5/...
+sun.java.command=marf.jar --diagnostic
+java.specification.vendor=Sun Microsystems Inc.
+user.language=en
+java.vm.info=mixed mode
+java.version=1.6.0_45
+java.ext.dirs=/nfs/encs/ArchDep/i686.linux26-RHEL5/...
+sun.boot.class.path=/nfs/encs/ArchDep/i686.linux26-RHEL5/...
+java.vendor=Sun Microsystems Inc.
+file.separator=/
+java.vendor.url.bug=http://java.sun.com/cgi-bin/bugreport...
+sun.cpu.endian=little
+sun.io.unicode.encoding=UnicodeLittle
+sun.cpu.isalist=
+
+		</marf-tool>
+	</description>
+	<file id="1" path="test-cases/marf/marf/.classpath">
+		<meta>
+			<type>XML 1.0 document text</type>
+			<length lines="7" words="18" bytes="321" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="2" path="test-cases/marf/marf/build.xml">
+		<meta>
+			<type>XML 1.0 document text</type>
+			<length lines="82" words="380" bytes="3701" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="3" path="test-cases/marf/marf/marf.spec">
+		<meta>
+			<type>ASCII English text</type>
+			<length lines="38" words="101" bytes="976" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="4" path="test-cases/marf/marf/nbproject/private/private.xml">
+		<meta>
+			<type>XML 1.0 document text</type>
+			<length lines="4" words="227" bytes="1132" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="5" path="test-cases/marf/marf/nbproject/build-impl.xml">
+		<meta>
+			<type>XML 1.0 document text</type>
+			<length lines="482" words="1284" bytes="23571" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="6" path="test-cases/marf/marf/nbproject/project.xml">
+		<meta>
+			<type>XML 1.0 document text</type>
+			<length lines="14" words="20" bytes="514" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="7" path="test-cases/marf/marf/src/test.java">
+		<meta>
+			<type>ASCII Java program text</type>
+			<length lines="658" words="2593" bytes="28976" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="8" path="test-cases/marf/marf/src/marf/Classification/Distance/ChebyshevDistance.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="66" words="192" bytes="1554" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="9" path="test-cases/marf/marf/src/marf/Classification/Distance/DiffDistance.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="105" words="337" bytes="2392" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="10" path="test-cases/marf/marf/src/marf/Classification/Distance/Distance.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="179" words="575" bytes="4968" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="11" path="test-cases/marf/marf/src/marf/Classification/Distance/EuclideanDistance.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="66" words="187" bytes="1505" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="12" path="test-cases/marf/marf/src/marf/Classification/Distance/HammingDistance.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="130" words="358" bytes="2869" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="13" path="test-cases/marf/marf/src/marf/Classification/Distance/MahalanobisDistance.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="98" words="283" bytes="2453" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="14" path="test-cases/marf/marf/src/marf/Classification/Distance/MinkowskiDistance.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="84" words="238" bytes="1946" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="15" path="test-cases/marf/marf/src/marf/Classification/Classification.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="525" words="1506" bytes="13622" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="16" path="test-cases/marf/marf/src/marf/Classification/ClassificationException.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="77" words="200" bytes="1674" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="17" path="test-cases/marf/marf/src/marf/Classification/ClassificationFactory.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="271" words="696" bytes="7506" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="18" path="test-cases/marf/marf/src/marf/Classification/IClassification.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="103" words="366" bytes="2950" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="19" path="test-cases/marf/marf/src/marf/Classification/Markov/Markov.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="101" words="238" bytes="2185" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="20" path="test-cases/marf/marf/src/marf/Classification/NeuralNetwork/Layer.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="175" words="508" bytes="3505" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="21" path="test-cases/marf/marf/src/marf/Classification/NeuralNetwork/NeuralNetwork.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="1393" words="3772" bytes="34015" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="22" path="test-cases/marf/marf/src/marf/Classification/NeuralNetwork/Neuron.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="371" words="951" bytes="7632" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="23" path="test-cases/marf/marf/src/marf/Classification/RandomClassification/RandomClassification.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="272" words="640" bytes="6093" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="24" path="test-cases/marf/marf/src/marf/Classification/Similarity/CosineSimilarityMeasure.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="192" words="601" bytes="5426" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="25" path="test-cases/marf/marf/src/marf/Classification/Stochastic/MaxProbabilityClassifier.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="290" words="776" bytes="7493" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="26" path="test-cases/marf/marf/src/marf/Classification/Stochastic/Stochastic.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="88" words="218" bytes="2009" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="27" path="test-cases/marf/marf/src/marf/Classification/Stochastic/ZipfLaw.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="707" words="1950" bytes="17344" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="28" path="test-cases/marf/marf/src/marf/Configuration.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="568" words="1306" bytes="14473" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="29" path="test-cases/marf/marf/src/marf/MARF.java">
+		<meta>
+			<type>ASCII English text</type>
+			<length lines="1934" words="6010" bytes="53338" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="30" path="test-cases/marf/marf/src/marf/Version.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="287" words="1199" bytes="8653" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="31" path="test-cases/marf/marf/src/marf/FeatureExtraction/Cepstral/Cepstral.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="64" words="162" bytes="1526" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="32" path="test-cases/marf/marf/src/marf/FeatureExtraction/FeatureExtraction.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="141" words="418" bytes="3581" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="33" path="test-cases/marf/marf/src/marf/FeatureExtraction/FeatureExtractionAggregator.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="450" words="1568" bytes="13526" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="34" path="test-cases/marf/marf/src/marf/FeatureExtraction/FeatureExtractionException.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="68" words="184" bytes="1503" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="35" path="test-cases/marf/marf/src/marf/FeatureExtraction/FeatureExtractionFactory.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="176" words="491" bytes="4795" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="36" path="test-cases/marf/marf/src/marf/FeatureExtraction/IFeatureExtraction.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="62" words="198" bytes="1629" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="37" path="test-cases/marf/marf/src/marf/FeatureExtraction/F0/F0.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="64" words="167" bytes="1520" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="38" path="test-cases/marf/marf/src/marf/FeatureExtraction/FFT/FFT.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="287" words="830" bytes="7190" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="39" path="test-cases/marf/marf/src/marf/FeatureExtraction/LPC/LPC.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="244" words="662" bytes="5740" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="40" path="test-cases/marf/marf/src/marf/FeatureExtraction/MinMaxAmplitudes/MinMaxAmplitudes.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="138" words="424" bytes="3741" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="41" path="test-cases/marf/marf/src/marf/FeatureExtraction/RandomFeatureExtraction/RandomFeatureExtraction.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="127" words="365" bytes="3309" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="42" path="test-cases/marf/marf/src/marf/FeatureExtraction/RawFeatureExtraction/RawFeatureExtraction.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="126" words="325" bytes="3041" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="43" path="test-cases/marf/marf/src/marf/FeatureExtraction/Segmentation/Segmentation.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="64" words="162" bytes="1551" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="44" path="test-cases/marf/marf/src/marf/Preprocessing/CFEFilters/BandPassFilter.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="55" words="120" bytes="1110" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="45" path="test-cases/marf/marf/src/marf/Preprocessing/CFEFilters/BandStopFilter.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="165" words="376" bytes="4395" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="46" path="test-cases/marf/marf/src/marf/Preprocessing/CFEFilters/CFEFilter.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="326" words="1107" bytes="9634" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="47" path="test-cases/marf/marf/src/marf/Preprocessing/CFEFilters/HighPassFilter.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="43" words="82" bytes="836" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="48" path="test-cases/marf/marf/src/marf/Preprocessing/CFEFilters/LowPassFilter.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="128" words="253" bytes="2937" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="49" path="test-cases/marf/marf/src/marf/Preprocessing/Filter.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="115" words="384" bytes="2983" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="50" path="test-cases/marf/marf/src/marf/Preprocessing/IFilter.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="77" words="294" bytes="2132" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="51" path="test-cases/marf/marf/src/marf/Preprocessing/IPreprocessing.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="132" words="510" bytes="3881" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="52" path="test-cases/marf/marf/src/marf/Preprocessing/Preprocessing.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="549" words="1717" bytes="14431" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="53" path="test-cases/marf/marf/src/marf/Preprocessing/PreprocessingException.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="79" words="227" bytes="1784" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="54" path="test-cases/marf/marf/src/marf/Preprocessing/PreprocessingFactory.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="238" words="572" bytes="5852" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="55" path="test-cases/marf/marf/src/marf/Preprocessing/Dummy/Crop.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="159" words="386" bytes="3117" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="56" path="test-cases/marf/marf/src/marf/Preprocessing/Dummy/Dummy.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="89" words="254" bytes="2065" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="57" path="test-cases/marf/marf/src/marf/Preprocessing/Dummy/Raw.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="129" words="367" bytes="3175" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="58" path="test-cases/marf/marf/src/marf/Preprocessing/Endpoint/Endpoint.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="223" words="714" bytes="5734" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="59" path="test-cases/marf/marf/src/marf/Preprocessing/FFTFilter/BandStopFilter.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="103" words="285" bytes="2428" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="60" path="test-cases/marf/marf/src/marf/Preprocessing/FFTFilter/BandpassFilter.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="112" words="300" bytes="2535" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="61" path="test-cases/marf/marf/src/marf/Preprocessing/FFTFilter/FFTFilter.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="326" words="1048" bytes="8754" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="62" path="test-cases/marf/marf/src/marf/Preprocessing/FFTFilter/HighFrequencyBoost.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="255" words="697" bytes="6242" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="63" path="test-cases/marf/marf/src/marf/Preprocessing/FFTFilter/HighPassFilter.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="118" words="316" bytes="2637" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="64" path="test-cases/marf/marf/src/marf/Preprocessing/FFTFilter/LowPassFilter.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="119" words="321" bytes="2655" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="65" path="test-cases/marf/marf/src/marf/Preprocessing/WaveletFilters/DualTreeComplexWaveletFilter.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="45" words="86" bytes="923" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="66" path="test-cases/marf/marf/src/marf/Preprocessing/WaveletFilters/DyadicWaveletFilter.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="44" words="86" bytes="885" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="67" path="test-cases/marf/marf/src/marf/Preprocessing/WaveletFilters/WaveletFilter.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="150" words="354" bytes="3765" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="68" path="test-cases/marf/marf/src/marf/Stats/StatisticalEstimators/Smoothing/AddDelta.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="195" words="516" bytes="4175" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="69" path="test-cases/marf/marf/src/marf/Stats/StatisticalEstimators/Smoothing/AddOne.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="44" words="115" bytes="846" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="70" path="test-cases/marf/marf/src/marf/Stats/StatisticalEstimators/Smoothing/GoodTuring.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="260" words="656" bytes="5556" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="71" path="test-cases/marf/marf/src/marf/Stats/StatisticalEstimators/Smoothing/ISmoothing.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="32" words="97" bytes="707" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="72" path="test-cases/marf/marf/src/marf/Stats/StatisticalEstimators/Smoothing/Smoothing.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="78" words="193" bytes="1653" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="73" path="test-cases/marf/marf/src/marf/Stats/StatisticalEstimators/Smoothing/WittenBell.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="251" words="616" bytes="5003" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="74" path="test-cases/marf/marf/src/marf/Stats/StatisticalEstimators/GLI.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="75" words="168" bytes="1220" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="75" path="test-cases/marf/marf/src/marf/Stats/StatisticalEstimators/IStatisticalEstimator.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="73" words="215" bytes="1787" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="76" path="test-cases/marf/marf/src/marf/Stats/StatisticalEstimators/KatzBackoff.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="73" words="167" bytes="1247" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="77" path="test-cases/marf/marf/src/marf/Stats/StatisticalEstimators/MLE.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="69" words="173" bytes="1285" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="78" path="test-cases/marf/marf/src/marf/Stats/StatisticalEstimators/SLI.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="72" words="166" bytes="1214" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="79" path="test-cases/marf/marf/src/marf/Stats/StatisticalEstimators/StatisticalEstimator.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="479" words="940" bytes="10788" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="80" path="test-cases/marf/marf/src/marf/Stats/Ngram.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="162" words="496" bytes="3495" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="81" path="test-cases/marf/marf/src/marf/Stats/Observation.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="146" words="425" bytes="3262" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="82" path="test-cases/marf/marf/src/marf/Stats/ProbabilityTable.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="744" words="1959" bytes="17688" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="83" path="test-cases/marf/marf/src/marf/Stats/StatisticalObject.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="175" words="483" bytes="3720" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="84" path="test-cases/marf/marf/src/marf/Stats/StatsCollector.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="42" words="118" bytes="837" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="85" path="test-cases/marf/marf/src/marf/Stats/WordStats.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="110" words="297" bytes="2228" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="86" path="test-cases/marf/marf/src/marf/Storage/Loaders/AIFFCLoader.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="88" words="200" bytes="1758" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="87" path="test-cases/marf/marf/src/marf/Storage/Loaders/AIFFLoader.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="88" words="200" bytes="1755" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="88" path="test-cases/marf/marf/src/marf/Storage/Loaders/AULoader.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="88" words="200" bytes="1749" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="89" path="test-cases/marf/marf/src/marf/Storage/Loaders/AudioSampleLoader.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="179" words="474" bytes="4047" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="90" path="test-cases/marf/marf/src/marf/Storage/Loaders/MIDILoader.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="88" words="200" bytes="1755" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="91" path="test-cases/marf/marf/src/marf/Storage/Loaders/MP3Loader.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="89" words="203" bytes="1771" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="92" path="test-cases/marf/marf/src/marf/Storage/Loaders/SNDLoader.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="88" words="200" bytes="1752" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="93" path="test-cases/marf/marf/src/marf/Storage/Loaders/SineLoader.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="165" words="516" bytes="4086" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="94" path="test-cases/marf/marf/src/marf/Storage/Loaders/TextLoader.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="304" words="946" bytes="8152" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="95" path="test-cases/marf/marf/src/marf/Storage/Loaders/ULAWLoader.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="77" words="154" bytes="1561" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="96" path="test-cases/marf/marf/src/marf/Storage/Loaders/WAVLoader.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="344" words="1047" bytes="9152" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="97" path="test-cases/marf/marf/src/marf/Storage/ByteArrayFileReader.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="231" words="536" bytes="4547" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="98" path="test-cases/marf/marf/src/marf/Storage/Cluster.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="250" words="735" bytes="5888" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="99" path="test-cases/marf/marf/src/marf/Storage/Database.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="153" words="436" bytes="3472" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="100" path="test-cases/marf/marf/src/marf/Storage/FeatureSet.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="340" words="876" bytes="8044" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="101" path="test-cases/marf/marf/src/marf/Storage/IDatabase.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="77" words="245" bytes="1776" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="102" path="test-cases/marf/marf/src/marf/Storage/IDatabaseConnection.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="34" words="95" bytes="742" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="103" path="test-cases/marf/marf/src/marf/Storage/ISampleLoader.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="199" words="861" bytes="6097" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="104" path="test-cases/marf/marf/src/marf/Storage/IStorageManager.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="185" words="649" bytes="4474" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="105" path="test-cases/marf/marf/src/marf/Storage/ITrainingSample.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="112" words="323" bytes="2404" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="106" path="test-cases/marf/marf/src/marf/Storage/MARFAudioFileFormat.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="407" words="1132" bytes="9093" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="107" path="test-cases/marf/marf/src/marf/Storage/ModuleParams.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="375" words="1028" bytes="9583" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="108" path="test-cases/marf/marf/src/marf/Storage/Result.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="220" words="635" bytes="4812" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="109" path="test-cases/marf/marf/src/marf/Storage/ResultSet.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="532" words="1551" bytes="12561" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="110" path="test-cases/marf/marf/src/marf/Storage/Sample.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="460" words="1344" bytes="10841" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="111" path="test-cases/marf/marf/src/marf/Storage/SampleLoader.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="306" words="869" bytes="7307" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="112" path="test-cases/marf/marf/src/marf/Storage/SampleLoaderFactory.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="188" words="494" bytes="4134" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="113" path="test-cases/marf/marf/src/marf/Storage/SampleRecorder.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="141" words="324" bytes="3057" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="114" path="test-cases/marf/marf/src/marf/Storage/StorageException.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="77" words="200" bytes="1590" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="115" path="test-cases/marf/marf/src/marf/Storage/StorageManager.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="909" words="2849" bytes="24709" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="116" path="test-cases/marf/marf/src/marf/Storage/TrainingSample.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="360" words="883" bytes="8303" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="117" path="test-cases/marf/marf/src/marf/Storage/TrainingSet.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="451" words="1289" bytes="11659" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="118" path="test-cases/marf/marf/src/marf/gui/util/BorderPanel.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="150" words="409" bytes="3563" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="119" path="test-cases/marf/marf/src/marf/gui/util/ColoredStatusBox.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="130" words="244" bytes="2272" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="120" path="test-cases/marf/marf/src/marf/gui/util/ColoredStatusPanel.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="247" words="661" bytes="5231" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="121" path="test-cases/marf/marf/src/marf/gui/util/GUIThread.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="110" words="211" bytes="1775" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="122" path="test-cases/marf/marf/src/marf/gui/util/SmartSizablePanel.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="201" words="545" bytes="3612" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="123" path="test-cases/marf/marf/src/marf/gui/GUIException.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="74" words="194" bytes="1471" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="124" path="test-cases/marf/marf/src/marf/gui/Spectrogram.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="268" words="799" bytes="5748" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="125" path="test-cases/marf/marf/src/marf/gui/SpectrogramPanel.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="56" words="147" bytes="1113" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="126" path="test-cases/marf/marf/src/marf/gui/WaveGrapher.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="124" words="328" bytes="2594" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="127" path="test-cases/marf/marf/src/marf/gui/WaveGrapherPanel.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="55" words="153" bytes="1131" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="128" path="test-cases/marf/marf/src/marf/junit/Preprocessing/PreprocessingTest.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="182" words="404" bytes="4456" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="129" path="test-cases/marf/marf/src/marf/junit/CloneabilityTest.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="64" words="118" bytes="1098" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="130" path="test-cases/marf/marf/src/marf/junit/VersionTest.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="305" words="655" bytes="6876" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="131" path="test-cases/marf/marf/src/marf/junit/Stats/WordStatsTest.java">
+		<meta>
+			<type>ASCII C program text</type>
+			<length lines="99" words="211" bytes="1965" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="132" path="test-cases/marf/marf/src/marf/junit/Storage/DatabaseTest.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="68" words="135" bytes="1262" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="133" path="test-cases/marf/marf/src/marf/junit/Storage/SampleTest.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="228" words="572" bytes="4891" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="134" path="test-cases/marf/marf/src/marf/junit/math/Algorithms.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="286" words="660" bytes="7825" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="135" path="test-cases/marf/marf/src/marf/math/Algorithms.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="963" words="3157" bytes="24049" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="136" path="test-cases/marf/marf/src/marf/math/ComplexMatrix.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="1311" words="3347" bytes="31199" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="137" path="test-cases/marf/marf/src/marf/math/ComplexNumber.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="346" words="866" bytes="6745" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="138" path="test-cases/marf/marf/src/marf/math/ComplexVector.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="342" words="1106" bytes="9182" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="139" path="test-cases/marf/marf/src/marf/math/MathException.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="64" words="179" bytes="1388" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="140" path="test-cases/marf/marf/src/marf/math/Matrix.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="2309" words="7209" bytes="53771" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="141" path="test-cases/marf/marf/src/marf/math/Vector.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="335" words="1095" bytes="7927" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="142" path="test-cases/marf/marf/src/marf/nlp/Collocations/ChiSquareTest.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="25" words="59" bytes="423" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="143" path="test-cases/marf/marf/src/marf/nlp/Collocations/CollocationWindow.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="25" words="59" bytes="431" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="144" path="test-cases/marf/marf/src/marf/nlp/Collocations/TTest.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="25" words="59" bytes="407" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="145" path="test-cases/marf/marf/src/marf/nlp/NLPException.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="74" words="189" bytes="1447" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="146" path="test-cases/marf/marf/src/marf/nlp/Parsing/GrammarCompiler/Grammar.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="679" words="2033" bytes="16942" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="147" path="test-cases/marf/marf/src/marf/nlp/Parsing/GrammarCompiler/GrammarAnalyzer.java">
+		<meta>
+			<type>ASCII C program text</type>
+			<length lines="522" words="1143" bytes="13379" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="148" path="test-cases/marf/marf/src/marf/nlp/Parsing/GrammarCompiler/GrammarCompiler.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="1216" words="3448" bytes="33006" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="149" path="test-cases/marf/marf/src/marf/nlp/Parsing/GrammarCompiler/GrammarElement.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="226" words="645" bytes="4685" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="150" path="test-cases/marf/marf/src/marf/nlp/Parsing/GrammarCompiler/GrammarTokenType.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="163" words="512" bytes="4822" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="151" path="test-cases/marf/marf/src/marf/nlp/Parsing/GrammarCompiler/NonTerminal.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="177" words="504" bytes="3846" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="152" path="test-cases/marf/marf/src/marf/nlp/Parsing/GrammarCompiler/ProbabilisticGrammarAnalyzer.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="170" words="384" bytes="4091" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="153" path="test-cases/marf/marf/src/marf/nlp/Parsing/GrammarCompiler/ProbabilisticGrammarCompiler.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="185" words="518" bytes="5069" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="154" path="test-cases/marf/marf/src/marf/nlp/Parsing/GrammarCompiler/ProbabilisticGrammarTokenType.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="55" words="149" bytes="1247" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="155" path="test-cases/marf/marf/src/marf/nlp/Parsing/GrammarCompiler/ProbabilisticRule.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="68" words="187" bytes="1392" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="156" path="test-cases/marf/marf/src/marf/nlp/Parsing/GrammarCompiler/Rule.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="243" words="684" bytes="5149" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="157" path="test-cases/marf/marf/src/marf/nlp/Parsing/GrammarCompiler/SemanticToken.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="84" words="202" bytes="1608" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="158" path="test-cases/marf/marf/src/marf/nlp/Parsing/GrammarCompiler/Terminal.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="111" words="316" bytes="2512" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="159" path="test-cases/marf/marf/src/marf/nlp/Parsing/ClassSymTabEntry.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="43" words="102" bytes="737" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="160" path="test-cases/marf/marf/src/marf/nlp/Parsing/CodeGenerator.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="178" words="352" bytes="2935" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="161" path="test-cases/marf/marf/src/marf/nlp/Parsing/Compiler.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="137" words="376" bytes="3224" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="162" path="test-cases/marf/marf/src/marf/nlp/Parsing/CompilerError.java">
+		<meta>
+			<type>ASCII C program text</type>
+			<length lines="120" words="359" bytes="2550" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="163" path="test-cases/marf/marf/src/marf/nlp/Parsing/FuncSymTabEntry.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="94" words="233" bytes="1780" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="164" path="test-cases/marf/marf/src/marf/nlp/Parsing/GenericLexicalAnalyzer.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="337" words="1040" bytes="8055" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="165" path="test-cases/marf/marf/src/marf/nlp/Parsing/LexicalAnalyzer.java">
+		<meta>
+			<type>ASCII C program text</type>
+			<length lines="817" words="1955" bytes="23225" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="166" path="test-cases/marf/marf/src/marf/nlp/Parsing/LexicalError.java">
+		<meta>
+			<type>ASCII C program text</type>
+			<length lines="229" words="707" bytes="5306" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="167" path="test-cases/marf/marf/src/marf/nlp/Parsing/Parser.java">
+		<meta>
+			<type>ASCII C program text</type>
+			<length lines="582" words="1481" bytes="14025" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="168" path="test-cases/marf/marf/src/marf/nlp/Parsing/ProbabilisticParser.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="532" words="1597" bytes="13422" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="169" path="test-cases/marf/marf/src/marf/nlp/Parsing/SemanticAnalyzer.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="57" words="149" bytes="1108" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="170" path="test-cases/marf/marf/src/marf/nlp/Parsing/SemanticError.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="202" words="611" bytes="4741" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="171" path="test-cases/marf/marf/src/marf/nlp/Parsing/SymDataType.java">
+		<meta>
+			<type>ASCII C program text</type>
+			<length lines="107" words="308" bytes="1915" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="172" path="test-cases/marf/marf/src/marf/nlp/Parsing/SymTabEntry.java">
+		<meta>
+			<type>ASCII C program text</type>
+			<length lines="296" words="870" bytes="5891" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="173" path="test-cases/marf/marf/src/marf/nlp/Parsing/SymbolTable.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="402" words="1179" bytes="9138" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="174" path="test-cases/marf/marf/src/marf/nlp/Parsing/SyntaxError.java">
+		<meta>
+			<type>ASCII C program text</type>
+			<length lines="319" words="935" bytes="7248" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="175" path="test-cases/marf/marf/src/marf/nlp/Parsing/Token.java">
+		<meta>
+			<type>ASCII C program text</type>
+			<length lines="243" words="685" bytes="5280" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="176" path="test-cases/marf/marf/src/marf/nlp/Parsing/TokenSubType.java">
+		<meta>
+			<type>ASCII C program text</type>
+			<length lines="409" words="1226" bytes="11060" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="177" path="test-cases/marf/marf/src/marf/nlp/Parsing/TokenType.java">
+		<meta>
+			<type>ASCII C program text</type>
+			<length lines="153" words="450" bytes="3188" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="178" path="test-cases/marf/marf/src/marf/nlp/Parsing/TransitionTable.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="487" words="1314" bytes="11508" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="179" path="test-cases/marf/marf/src/marf/nlp/Parsing/VarSymTabEntry.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="107" words="261" bytes="1786" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="180" path="test-cases/marf/marf/src/marf/nlp/Stemming/IStemming.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="26" words="69" bytes="478" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="181" path="test-cases/marf/marf/src/marf/nlp/Stemming/Stemming.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="29" words="83" bytes="576" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="182" path="test-cases/marf/marf/src/marf/nlp/Stemming/StemmingEN.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="37" words="84" bytes="626" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="183" path="test-cases/marf/marf/src/marf/nlp/Storage/CorporaStorageManager.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="117" words="245" bytes="2646" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="184" path="test-cases/marf/marf/src/marf/nlp/Storage/Corpus.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="457" words="1085" bytes="10512" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="185" path="test-cases/marf/marf/src/marf/nlp/util/NLPStreamTokenizer.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="311" words="827" bytes="6532" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="186" path="test-cases/marf/marf/src/marf/util/comparators/FrequencyComparator.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="79" words="251" bytes="2124" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="187" path="test-cases/marf/marf/src/marf/util/comparators/RankComparator.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="52" words="144" bytes="1189" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="188" path="test-cases/marf/marf/src/marf/util/comparators/ResultComparator.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="101" words="290" bytes="2210" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="189" path="test-cases/marf/marf/src/marf/util/Arrays.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="4292" words="19286" bytes="137543" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="190" path="test-cases/marf/marf/src/marf/util/BaseThread.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="251" words="893" bytes="6273" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="191" path="test-cases/marf/marf/src/marf/util/ByteUtils.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="282" words="970" bytes="6966" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="192" path="test-cases/marf/marf/src/marf/util/Debug.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="168" words="598" bytes="4058" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="193" path="test-cases/marf/marf/src/marf/util/ExceptionFactory.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="139" words="384" bytes="3583" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="194" path="test-cases/marf/marf/src/marf/util/ExceptionUtils.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="72" words="208" bytes="1685" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="195" path="test-cases/marf/marf/src/marf/util/ExpandedThreadGroup.java">
+		<meta>
+			<type>ASCII C program text</type>
+			<length lines="173" words="541" bytes="3932" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="196" path="test-cases/marf/marf/src/marf/util/FreeVector.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="261" words="1006" bytes="7272" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="197" path="test-cases/marf/marf/src/marf/util/IMARFException.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="20" words="47" bytes="393" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="198" path="test-cases/marf/marf/src/marf/util/IOptionProvider.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="56" words="161" bytes="1696" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="199" path="test-cases/marf/marf/src/marf/util/InvalidSampleFormatException.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="88" words="257" bytes="2003" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="200" path="test-cases/marf/marf/src/marf/util/Logger.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="351" words="972" bytes="7995" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="201" path="test-cases/marf/marf/src/marf/util/MARFException.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="156" words="426" bytes="3458" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="202" path="test-cases/marf/marf/src/marf/util/MARFRuntimeException.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="98" words="285" bytes="2239" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="203" path="test-cases/marf/marf/src/marf/util/Matrix.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="145" words="426" bytes="3229" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="204" path="test-cases/marf/marf/src/marf/util/NotImplementedException.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="64" words="187" bytes="1452" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="205" path="test-cases/marf/marf/src/marf/util/OptionFileLoader.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="343" words="886" bytes="7740" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="206" path="test-cases/marf/marf/src/marf/util/OptionProcessor.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="938" words="3176" bytes="25954" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="207" path="test-cases/marf/marf/src/marf/util/SortComparator.java">
+		<meta>
+			<type>Perl5 module source text</type>
+			<length lines="95" words="285" bytes="2079" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="208" path="test-cases/marf/marf/src/tools/cvs2cl.sh">
+		<meta>
+			<type>Bourne-Again shell script text executable</type>
+			<length lines="15" words="55" bytes="411" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="209" path="test-cases/marf/marf/src/tools/make-test.sh">
+		<meta>
+			<type>Bourne-Again shell script text executable</type>
+			<length lines="22" words="95" bytes="516" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="210" path="test-cases/marf/marf/src/tools/md5sumall.sh">
+		<meta>
+			<type>Bourne-Again shell script text executable</type>
+			<length lines="48" words="113" bytes="617" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="211" path="test-cases/marf/marf/src/tools/revision-check.sh">
+		<meta>
+			<type>Bourne-Again shell script text executable</type>
+			<length lines="180" words="694" bytes="4771" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="212" path="test-cases/marf/marf/src/tools/version.sh">
+		<meta>
+			<type>Bourne-Again shell script text executable</type>
+			<length lines="17" words="35" bytes="300" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="213" path="test-cases/marf/apps/LangIdentApp/.classpath">
+		<meta>
+			<type>XML 1.0 document text</type>
+			<length lines="7" words="17" bytes="270" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="214" path="test-cases/marf/apps/LangIdentApp/LangIdentApp.java">
+		<meta>
+			<type>ASCII Java program text</type>
+			<length lines="603" words="1475" bytes="16186" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="215" path="test-cases/marf/apps/LangIdentApp/testing.sh">
+		<meta>
+			<type>Tenex C shell script text executable</type>
+			<length lines="115" words="305" bytes="2455" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="216" path="test-cases/marf/apps/LangIdentApp/training.sh">
+		<meta>
+			<type>Tenex C shell script text executable</type>
+			<length lines="120" words="340" bytes="2457" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="217" path="test-cases/marf/apps/ProbabilisticParsingApp/.classpath">
+		<meta>
+			<type>XML 1.0 document text</type>
+			<length lines="7" words="17" bytes="270" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="218" path="test-cases/marf/apps/ProbabilisticParsingApp/ProbabilisticParsingApp.java">
+		<meta>
+			<type>ASCII Java program text</type>
+			<length lines="423" words="1103" bytes="10084" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="219" path="test-cases/marf/apps/ProbabilisticParsingApp/testing.sh">
+		<meta>
+			<type>Bourne-Again shell script text executable</type>
+			<length lines="97" words="277" bytes="2047" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="220" path="test-cases/marf/apps/Regression/.classpath">
+		<meta>
+			<type>XML 1.0 document text</type>
+			<length lines="7" words="17" bytes="270" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="221" path="test-cases/marf/apps/Regression/Regression.java">
+		<meta>
+			<type>ASCII Java program text</type>
+			<length lines="184" words="502" bytes="4193" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="222" path="test-cases/marf/apps/SpeakerIdentApp/.classpath">
+		<meta>
+			<type>XML 1.0 document text</type>
+			<length lines="7" words="18" bytes="290" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="223" path="test-cases/marf/apps/SpeakerIdentApp/SpeakerIdentApp.java">
+		<meta>
+			<type>ASCII Java program text</type>
+			<length lines="1104" words="3094" bytes="30326" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="224" path="test-cases/marf/apps/SpeakerIdentApp/SpeakersIdentDb.java">
+		<meta>
+			<type>ASCII Java program text</type>
+			<length lines="605" words="1646" bytes="14284" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="225" path="test-cases/marf/apps/SpeakerIdentApp/testing.sh">
+		<meta>
+			<type>Tenex C shell script text executable</type>
+			<length lines="113" words="462" bytes="3310" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="226" path="test-cases/marf/apps/TestFFT/.classpath">
+		<meta>
+			<type>XML 1.0 document text</type>
+			<length lines="7" words="17" bytes="270" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="227" path="test-cases/marf/apps/TestFFT/TestFFT.java">
+		<meta>
+			<type>ASCII Java program text</type>
+			<length lines="237" words="624" bytes="5297" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="228" path="test-cases/marf/apps/TestFilters/.classpath">
+		<meta>
+			<type>XML 1.0 document text</type>
+			<length lines="7" words="17" bytes="270" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="229" path="test-cases/marf/apps/TestFilters/ImageSample.java">
+		<meta>
+			<type>ASCII Java program text</type>
+			<length lines="175" words="482" bytes="3980" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="230" path="test-cases/marf/apps/TestFilters/ImageSampleLoader.java">
+		<meta>
+			<type>ASCII Java program text</type>
+			<length lines="90" words="177" bytes="1814" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="231" path="test-cases/marf/apps/TestFilters/TestFilters.java">
+		<meta>
+			<type>ASCII Java program text</type>
+			<length lines="305" words="786" bytes="7207" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="232" path="test-cases/marf/apps/TestLPC/.classpath">
+		<meta>
+			<type>XML 1.0 document text</type>
+			<length lines="7" words="17" bytes="270" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="233" path="test-cases/marf/apps/TestLPC/TestLPC">
+		<meta>
+			<type>Bourne-Again shell script text executable</type>
+			<length lines="29" words="76" bytes="502" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="234" path="test-cases/marf/apps/TestLPC/TestLPC.java">
+		<meta>
+			<type>ASCII Java program text</type>
+			<length lines="238" words="613" bytes="5248" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="235" path="test-cases/marf/apps/TestLoaders/.classpath">
+		<meta>
+			<type>XML 1.0 document text</type>
+			<length lines="7" words="17" bytes="270" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="236" path="test-cases/marf/apps/TestLoaders/TestLoaders.java">
+		<meta>
+			<type>ASCII Java program text</type>
+			<length lines="368" words="1115" bytes="10092" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="237" path="test-cases/marf/apps/TestMath/.classpath">
+		<meta>
+			<type>XML 1.0 document text</type>
+			<length lines="7" words="17" bytes="270" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="238" path="test-cases/marf/apps/TestMath/MathTestApp.java">
+		<meta>
+			<type>ASCII Java program text</type>
+			<length lines="416" words="1242" bytes="12515" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="239" path="test-cases/marf/apps/TestNN/samples/test1.xml">
+		<meta>
+			<type>XML 1.0 document text</type>
+			<length lines="254" words="606" bytes="8031" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="240" path="test-cases/marf/apps/TestNN/samples/test2.xml">
+		<meta>
+			<type>XML 1.0 document text</type>
+			<length lines="66" words="149" bytes="1848" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="241" path="test-cases/marf/apps/TestNN/samples/test3.xml">
+		<meta>
+			<type>XML 1.0 document text</type>
+			<length lines="682" words="1656" bytes="22311" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="242" path="test-cases/marf/apps/TestNN/.classpath">
+		<meta>
+			<type>XML 1.0 document text</type>
+			<length lines="7" words="17" bytes="270" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="243" path="test-cases/marf/apps/TestNN/TestNN.java">
+		<meta>
+			<type>ASCII Java program text</type>
+			<length lines="402" words="1018" bytes="9319" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="244" path="test-cases/marf/apps/TestNN/nn.xml">
+		<meta>
+			<type>XML 1.0 document text</type>
+			<length lines="64" words="126" bytes="1499" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="245" path="test-cases/marf/apps/TestPlugin/.classpath">
+		<meta>
+			<type>XML 1.0 document text</type>
+			<length lines="7" words="17" bytes="263" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="246" path="test-cases/marf/apps/TestPlugin/HashAddFeatureExctractor.java">
+		<meta>
+			<type>ASCII Java program text</type>
+			<length lines="119" words="350" bytes="3103" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="247" path="test-cases/marf/apps/TestPlugin/HashClassifier.java">
+		<meta>
+			<type>ASCII Java program text</type>
+			<length lines="159" words="453" bytes="3902" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="248" path="test-cases/marf/apps/TestPlugin/RandomPreprocessing.java">
+		<meta>
+			<type>ASCII Java program text</type>
+			<length lines="58" words="225" bytes="1710" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="249" path="test-cases/marf/apps/TestPlugin/TestPlugin.java">
+		<meta>
+			<type>ASCII Java program text</type>
+			<length lines="264" words="698" bytes="6568" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="250" path="test-cases/marf/apps/TestPlugin/UnrestrictedWAVLoader.java">
+		<meta>
+			<type>ASCII Java program text</type>
+			<length lines="58" words="218" bytes="1759" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="251" path="test-cases/marf/apps/TestSampleRecorder/.classpath">
+		<meta>
+			<type>XML 1.0 document text</type>
+			<length lines="7" words="17" bytes="270" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="252" path="test-cases/marf/apps/TestSampleRecorder/TestSampleRecorder.java">
+		<meta>
+			<type>ASCII Java program text</type>
+			<length lines="74" words="168" bytes="1825" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="253" path="test-cases/marf/apps/TestWaveLoader/.classpath">
+		<meta>
+			<type>XML 1.0 document text</type>
+			<length lines="7" words="17" bytes="270" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="254" path="test-cases/marf/apps/TestWaveLoader/TestWaveLoader.java">
+		<meta>
+			<type>ASCII Java program text</type>
+			<length lines="247" words="702" bytes="5756" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="255" path="test-cases/marf/apps/ZipfLawApp/.classpath">
+		<meta>
+			<type>XML 1.0 document text</type>
+			<length lines="7" words="17" bytes="270" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="256" path="test-cases/marf/apps/ZipfLawApp/ZipfLaw.java">
+		<meta>
+			<type>ASCII Java program text</type>
+			<length lines="332" words="902" bytes="8178" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+	<file id="257" path="test-cases/marf/apps/ZipfLawApp/testing.sh">
+		<meta>
+			<type>Bourne-Again shell script text executable</type>
+			<length lines="60" words="181" bytes="1214" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+</dataset>
