@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+	<file id="1" path="/home/c/c_bode/NetBeansProjects/QuickPM1/lib/marfcat/gipsy_test.xml">
+		<meta>
+			<type>HTML document text</type>
+			<length lines="43" words="191" bytes="1897" />
+		</meta>
+		<location line="" fraglines="">
+			<meta>
+				<cve></cve>
+				<name cweid=""></name>
+			</meta>
+			<fragment>
+			</fragment>
+			<explanation>
+			</explanation>
+		</location>
+	</file>
+</dataset>

@@ -49,4 +49,14 @@ public class MarfcatTest {
             
         }
     }
+    
+    @Test
+    public void test2() {
+        marf = new Marfcat();
+        try {
+            marf.analyze("lib/marfcat/apache-tomcat-5.5.13-src_train.xml");
+        } catch (Exception e) {
+            
+        }
+    }
 }

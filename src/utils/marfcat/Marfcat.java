@@ -40,4 +40,25 @@ public class Marfcat {
         process.waitFor();
     }
     
+    public void analyze (String inputFilePath)
+            throws IOException, InterruptedException {
+        
+        // execute job
+        String options = " --batch-ident test-quick-marf-cve ";
+        String options2 = " -nopreprep -raw -fft -cheb";
+        Process process = Runtime.getRuntime().exec(marfcatExec + options + inputFilePath + options2);
+        
+        // redirect Marfcat output streams
+        InputStream in = process.getInputStream();
+        InputStream err = process.getErrorStream();
+        StreamMonitor inMonitor = new StreamMonitor(in);
+        StreamMonitor errMonitor = new StreamMonitor(err, true);
+        inMonitor.run();
+        errMonitor.run();
+        
+        // wait for process to finish
+        process.waitFor();
+        
+    }
+    
 }
