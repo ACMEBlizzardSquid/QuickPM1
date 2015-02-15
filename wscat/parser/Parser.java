@@ -143,6 +143,7 @@ public abstract class Parser extends RecursiveAction {
 	
 	@Override
 	protected void compute() {
+		boolean totalLinksUnderLimit = true;
 		
 		// RESET
 		if(isMaster()) resetState();
@@ -151,7 +152,7 @@ public abstract class Parser extends RecursiveAction {
 			try{
 				List<String> delegatedSet       = splitWork();
 				final int    delegatedSetSize   = (delegatedSet == null)?0:delegatedSet.size();
-				final int linksExplored         = flCounter.addAndGet(urls.size()); // Blocking call - Speculating
+				final int    linksExplored      = flCounter.addAndGet(urls.size()); // Blocking call - Speculating
 				// FORK
 				if(delegatedSet != null && ! isMaster()){
 					final int deltaLink = (searchDepth - linksExplored);
@@ -167,7 +168,7 @@ public abstract class Parser extends RecursiveAction {
 				parseLinks(links);
 				reduce();
 				
-				final boolean totalLinksUnderLimit = (delegatedSetSize + linksExplored) < searchDepth;
+				totalLinksUnderLimit = (delegatedSetSize + linksExplored) < searchDepth;
 				if(! links.isEmpty() && totalLinksUnderLimit && isForkingEnabled()){
 					final int deltaLink = flCounter.get() + delegatedSetSize + links.size() - searchDepth; // sync
 					//final int deltaLink = linksExplored + delegatedSetSize + links.size() - searchDepth; // nosync
@@ -195,7 +196,7 @@ public abstract class Parser extends RecursiveAction {
 					break;
 				}
 				else{
-					if(! links.isEmpty()){
+					if(! links.isEmpty() && totalLinksUnderLimit){
 						this.urls  = links;
 						this.links = new LinkedList<String>();
 					}
@@ -230,6 +231,9 @@ public abstract class Parser extends RecursiveAction {
 			while(this.urls.size() > chunkSize)
 				delegatedSet.add(this.urls.remove(0));
 			return delegatedSet;
+		}
+		if(! isForkingEnabled()){
+			// TODO: flCounter - urls -> remove unused urls
 		}
 		return null;
 	}

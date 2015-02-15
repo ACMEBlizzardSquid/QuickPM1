@@ -188,13 +188,12 @@ public class WSDLRetriever extends Parser {
 	// Filters
 	
 	@Override
-	protected List<String> getProposedLinks(List<String> anchors) {
+	protected void parseLinks(List<String> anchors) {
 		for(ListIterator<String> it = anchors.listIterator(); it.hasNext(); ){
 			String link = it.next();		
 			if(! wsdlToParse.contains(link))
 				it.remove();
 		}
-		return anchors;
 	}
 	
 	
